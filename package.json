@@ -18,7 +18,7 @@
         }],
         "grammars": [{
             "language": "duckyscript",
-            "scopeName": "",
+            "scopeName": "source.duckyscript",
             "path": "./syntaxes/duckyscript.tmLanguage.json"
         }]
     }

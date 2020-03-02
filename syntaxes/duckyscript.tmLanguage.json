@@ -1,32 +1,56 @@
 {
 	"$schema": "https://raw.githubusercontent.com/martinring/tmlanguage/master/tmlanguage.json",
+	"scopeName": "source.duckyscript",
 	"name": "Ducky Script",
 	"patterns": [
 		{
 			"include": "#keywords"
 		},
 		{
-			"include": "#strings"
+			"include": "#comment"
+		},
+		{
+			"include": "#variable"
+		},
+		{
+			"include": "#string"
+		},
+		{
+			"include": "#number"
 		}
 	],
 	"repository": {
 		"keywords": {
 			"patterns": [{
 				"name": "keyword.control.duckyscript",
-				"match": "\\b(if|while|for|return)\\b"
+				"match": "(GUI|WINDOWS|APP|MENU|SHIFT|ALT|CONTROL|CTRL|DOWNARROW|DOWN|UPARROW|UP|LEFTARROW|LEFT|RIGHTARROW|RIGHT|BREAK|PAUSE|CAPSLOCK|DELETE|END|ENTER|ESCAPE|ESC|HOME|INSERT|NUMLOCK|PAGEUP|PAGEDOWN|PRINTSCREEN|SCROLLLOCK|SPACE|TAB) ?([A-Z]*|((GUI|WINDOWS|APP|MENU|SHIFT|ALT|CONTROL|CTRL|DOWNARROW|DOWN|UPARROW|UP|LEFTARROW|LEFT|RIGHTARROW|RIGHT|BREAK|PAUSE|CAPSLOCK|DELETE|END|ENTER|ESCAPE|ESC|HOME|INSERT|NUMLOCK|PAGEUP|PAGEDOWN|PRINTSCREEN|SCROLLLOCK|SPACE|TAB)*))?"
+				}]
+		},
+		"comment": {
+			"name": "comment.line.duckyscript",
+			"begin": "^REM\\s",
+			"end": "$"
+		},
+		"variable": {
+			"patterns": [{
+				"name": "keyword.variable.duckyscript",
+				"match": "(DELAY|DEFAULT_DELAY|DEFAULTDELAY|REPEAT|STRING)\\s"
 			}]
 		},
-		"strings": {
-			"name": "string.quoted.double.duckyscript",
-			"begin": "\"",
-			"end": "\"",
+		"string": {
+			"name": "string.duckyscript",
+			"begin": "(?<=STRING\\s).*",
+			"end": "$",
 			"patterns": [
 				{
 					"name": "constant.character.escape.duckyscript",
 					"match": "\\\\."
 				}
 			]
+		},
+		"number": {
+			"name": "constant.numeric.duckyscript",
+			"match" : "[0-9]"
 		}
-	},
-	"scopeName": ""
+	}
 }
