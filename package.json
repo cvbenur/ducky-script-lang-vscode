@@ -1,0 +1,25 @@
+{
+    "name": "ducky-script-lang-vscode",
+    "displayName": "Ducky Script Language for VSCode",
+    "description": "",
+    "version": "0.0.1",
+    "engines": {
+        "vscode": "^1.42.0"
+    },
+    "categories": [
+        "Programming Languages"
+    ],
+    "contributes": {
+        "languages": [{
+            "id": "duckyscript",
+            "aliases": ["Ducky Script", "duckyscript"],
+            "extensions": [".txt"],
+            "configuration": "./language-configuration.json"
+        }],
+        "grammars": [{
+            "language": "duckyscript",
+            "scopeName": "",
+            "path": "./syntaxes/duckyscript.tmLanguage.json"
+        }]
+    }
+}
