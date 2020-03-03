@@ -1,10 +1,7 @@
 # Ducky Script Language for VSCode
 
 This extension enables syntax highlighting for the **Ducky Script** scripting language, allowing for easier and more efficient scripting.
-
 <br>
-
-## **General**
 
 ## Features
 
@@ -59,7 +56,7 @@ This extension does not yet provide syntax error detection, the problematic phra
 
 <br>
 
-## **Releases**
+## Releases
 
 ### 1.0.0 - March 3rd, 2020
 
@@ -67,10 +64,9 @@ Initial release of the **Ducky Script Language for VSCode** extension.
 
 <br>
 
-
 ### About this extension
 
-Written by **Ruben Nabet**.. The source code to this extension is free to download and tweak or customize for your personnal use only.
+Written by **Ruben Nabet**. The source code to this extension is free to download and tweak or customize for your personnal use only.
 
 This is my very first extension, so feedback is much appreciated ! :)
 
