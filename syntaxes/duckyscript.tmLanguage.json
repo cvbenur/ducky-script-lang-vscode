@@ -17,6 +17,9 @@
 		},
 		{
 			"include": "#number"
+		},
+		{
+			"include": "#errors"
 		}
 	],
 	"repository": {
