@@ -1,65 +1,77 @@
-# ducky-script-lang-vscode README
+# Ducky Script Language for VSCode
 
-This is the README for your extension "ducky-script-lang-vscode". After writing up a brief description, we recommend including the following sections.
+This extension enables syntax highlighting for the **Ducky Script** scripting language, allowing for easier and more efficient scripting.
+
+<br>
+
+## **General**
 
 ## Features
 
-Describe specific features of your extension including screenshots of your extension in action. Image paths are relative to this README file.
+This extension works with **.txt files**.
 
-For example if there is an image subfolder under your extension project workspace:
+Syntax detection features :
+*   Detection and highlighting for **comment lines** (`REM` lines),
+*   Detection and highlighting for **control keys** (`ENTER`, `ESC`, `GUI`, `ALT`, `CTRL` and so on  -- detailed list below),
+*   Detection and highlighting for **timer commands** (`DELAY`, `DEFAULTDELAY`, `REPEAT` and so on -- detailed list below),
+*   Detection and highlighting for **strings** (`STRING` lines).
 
-\!\[feature X\]\(images/feature-x.png\)
+Detailed list of supported commands :
 
-> Tip: Many popular extensions utilize animations. This is an excellent way to show off your extension! We recommend short, focused animations that are easy to follow.
-
-## Requirements
-
-If you have any requirements or dependencies, add a section describing those and how to install and configure them.
-
-## Extension Settings
-
-Include if your extension adds any VS Code settings through the `contributes.configuration` extension point.
-
-For example:
-
-This extension contributes the following settings:
-
-* `myExtension.enable`: enable/disable this extension
-* `myExtension.thing`: set to `blah` to do something
+| Keyword                           | Category | Behaviour                               |
+| --------------------------------- | :------- | --------------------------------------- |
+| `REM`                             | Comment  | Turns the line into a comment           |
+| `STRING`                          | Variable | Detects the following value as a string |
+| `DELAY`                           | Variable | Detects the following value as a number |
+| `DEFAULTDELAY` or `DEFAULT_DELAY` | Variable | Detects the following value as a number |
+| `REPEAT`                          | Variable | Detects the following value as a number |
+| `GUI`                             | Key      | Detects a keyboard key                  |
+| `WINDOWS`                         | Key      | Detects a keyboard key                  |
+| `APP`                             | Key      | Detects a keyboard key                  |
+| `MENU`                            | Key      | Detects a keyboard key                  |
+| `SHIFT`                           | Key      | Detects a keyboard key                  |
+| `ALT`                             | Key      | Detects a keyboard key                  |
+| `CTRL` or `CONTROL`               | Key      | Detects a keyboard key                  |
+| `DOWNARROW` or `DOWN`             | Key      | Detects a keyboard key                  |
+| `UPARROW` or `UP`                 | Key      | Detects a keyboard key                  |
+| `LEFTARROW` or `LEFT`             | Key      | Detects a keyboard key                  |
+| `RIGHTARROW` or `RIGHT`           | Key      | Detects a keyboard key                  |
+| `BREAK`                           | Key      | Detects a keyboard key                  |
+| `PAUSE`                           | Key      | Detects a keyboard key                  |
+| `CAPSLOCK`                        | Key      | Detects a keyboard key                  |
+| `DELETE`                          | Key      | Detects a keyboard key                  |
+| `END`                             | Key      | Detects a keyboard key                  |
+| `ENTER`                           | Key      | Detects a keyboard key                  |
+| `ESCAPE` or `ESC`                 | Key      | Detects a keyboard key                  |
+| `HOME`                            | Key      | Detects a keyboard key                  |
+| `INSERT`                          | Key      | Detects a keyboard key                  |
+| `NUMLOCK`                         | Key      | Detects a keyboard key                  |
+| `PAGEUP`                          | Key      | Detects a keyboard key                  |
+| `PAGEDOWN`                        | Key      | Detects a keyboard key                  |
+| `PRINTSCREEN`                     | Key      | Detects a keyboard key                  |
+| `SCROLLLOCK`                      | Key      | Detects a keyboard key                  |
+| `SPACE`                           | Key      | Detects a keyboard key                  |
+| `TAB`                             | Key      | Detects a keyboard key                  |
 
 ## Known Issues
 
-Calling out known issues can help limit users opening duplicate issues against your extension.
+This extension does not yet provide syntax error detection, the problematic phrases are just **not highlighted**.
 
-## Release Notes
+<br>
 
-Users appreciate release notes as you update your extension.
+## **Releases**
 
-### 1.0.0
+### 1.0.0 - March 3rd, 2020
 
-Initial release of ...
+Initial release of the **Ducky Script Language for VSCode** extension.
 
-### 1.0.1
+<br>
 
-Fixed issue #.
 
-### 1.1.0
+### About this extension
 
-Added features X, Y, and Z.
+Written by **Ruben Nabet**.. The source code to this extension is free to download and tweak or customize for your personnal use only.
 
------------------------------------------------------------------------------------------------------------
-
-## Working with Markdown
-
-**Note:** You can author your README using Visual Studio Code.  Here are some useful editor keyboard shortcuts:
-
-* Split the editor (`Cmd+\` on macOS or `Ctrl+\` on Windows and Linux)
-* Toggle preview (`Shift+CMD+V` on macOS or `Shift+Ctrl+V` on Windows and Linux)
-* Press `Ctrl+Space` (Windows, Linux) or `Cmd+Space` (macOS) to see a list of Markdown snippets
-
-### For more information
-
-* [Visual Studio Code's Markdown Support](http://code.visualstudio.com/docs/languages/markdown)
-* [Markdown Syntax Reference](https://help.github.com/articles/markdown-basics/)
+This is my very first extension, so feedback is much appreciated ! :)
 
 **Enjoy!**
