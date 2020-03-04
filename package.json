@@ -1,7 +1,7 @@
 {
     "name": "ducky-script-lang-vscode",
     "displayName": "Ducky Script Language for VSCode",
-    "description": "",
+    "description": "A simple syntax highlighting extension to enable support of Ducky Script.",
     "version": "1.0.0",
     "engines": {
         "vscode": "^1.42.0"
