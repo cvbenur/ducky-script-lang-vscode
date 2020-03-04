@@ -1,4 +1,5 @@
 {
+    "publisher": "cvbenur",
     "name": "ducky-script-lang-vscode",
     "displayName": "Ducky Script Language for VSCode",
     "description": "A simple syntax highlighting extension to enable support of Ducky Script.",
