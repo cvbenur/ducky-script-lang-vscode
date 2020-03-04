@@ -58,15 +58,24 @@ This extension does not yet provide syntax error detection, the problematic phra
 
 ## Releases
 
-### 1.0.0 - March 3rd, 2020
+### 1.0.0 - March 4th, 2020
 
 Initial release of the **Ducky Script Language for VSCode** extension.
 
 <br>
 
+## Related projects
+
+### Ducky Script OS-specific payloads
+
+Here is another repo of mine containing a compilation of Ducky Script payloads sorted by OS and by distribution, which you can adapt to your needs : <br>
+https://github.com/cvbenur/ducky-scripts-and-payloads
+
+<br>
+
 ### About this extension
 
-Written by **Ruben Nabet**. The source code to this extension is free to download and tweak or customize for your personnal use only.
+Written by **benur**. The source code to this extension is free to download and tweak or customize for your personnal use only.
 
 This is my very first extension, so feedback is much appreciated ! :)
 
