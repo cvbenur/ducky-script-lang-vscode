@@ -4,7 +4,10 @@
     "displayName": "Ducky Script Language for VSCode",
     "description": "A simple syntax highlighting extension to enable support of Ducky Script.",
     "version": "1.0.0",
-    "repository": "https://github.com/cvbenur/ducky-script-lang-vscode",
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/cvbenur/ducky-script-lang-vscode"
+    },
     "engines": {
         "vscode": "^1.42.0"
     },
