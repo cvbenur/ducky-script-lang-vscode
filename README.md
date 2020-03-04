@@ -16,7 +16,7 @@ Syntax detection features :
 Detailed list of supported commands :
 
 | Keyword                           | Category | Behaviour                               |
-| --------------------------------- | :------- | --------------------------------------- |
+| --------------------------------- | :------: | --------------------------------------- |
 | `REM`                             | Comment  | Turns the line into a comment           |
 | `STRING`                          | Variable | Detects the following value as a string |
 | `DELAY`                           | Variable | Detects the following value as a number |
@@ -50,17 +50,12 @@ Detailed list of supported commands :
 | `SPACE`                           | Key      | Detects a keyboard key                  |
 | `TAB`                             | Key      | Detects a keyboard key                  |
 
-## Known Issues
-
-This extension does not yet provide syntax error detection, the problematic phrases are just **not highlighted**.
 
 <br>
 
-## Releases
+## Known Issues
 
-### 1.0.0 - March 4th, 2020
-
-Initial release of the **Ducky Script Language for VSCode** extension.
+This extension does not yet provide syntax error detection, the problematic phrases are just **not highlighted**.
 
 <br>
 
@@ -71,6 +66,23 @@ Initial release of the **Ducky Script Language for VSCode** extension.
 Here is another repo of mine containing a compilation of Ducky Script payloads sorted by OS and by distribution, which you can adapt to your needs : <br>
 https://github.com/cvbenur/ducky-scripts-and-payloads
 
+<br>
+
+## Releases
+
+### 1.0.1 - March 4th, 2020
+
+Improved detection of error-prone keyword use cases.
+
+> **E.g.** Certain inline keyword combinations resulted in false positives, and thus errors in highlighting.
+
+<br>
+
+### 1.0.0 - March 4th, 2020
+
+Initial release of the **Ducky Script Language for VSCode** extension.
+
+. . .
 <br>
 
 ### About this extension
