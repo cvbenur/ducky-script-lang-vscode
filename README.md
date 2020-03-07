@@ -75,7 +75,9 @@ https://github.com/cvbenur/ducky-scripts-and-payloads
 Added an icon to the extension. It can be found under `./img/icon.png`.
 
 Here it is :
-![Logo](https://github.com/cvbenur/ducky-script-lang-vscode/tree/master/img/icon.png "DSLangForVSC Logo")
+<p align="center">
+    <img width=128 height=128 src="./img/icon.png">
+</p>
 
 <br>
 
