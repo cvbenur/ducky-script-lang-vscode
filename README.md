@@ -70,7 +70,7 @@ https://github.com/cvbenur/ducky-scripts-and-payloads
 
 ## Releases
 
-### 1.0.4 - March 7th, 2020
+### 1.0.5 - March 7th, 2020
 
 Added an icon to the extension. It can be found under `./img/icon.png`.
 
