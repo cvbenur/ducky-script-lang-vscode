@@ -19,7 +19,7 @@
 			"include": "#number"
 		},
 		{
-			"include": "#errors"
+			"include": "#invalid"
 		}
 	],
 	"repository": {
@@ -54,6 +54,20 @@
 		"number": {
 			"name": "constant.numeric.duckyscript",
 			"match" : "[0-9]*(\\.[0-9]*)?"
+		},
+		"invalid": {
+			"patterns": [
+				{
+					"name": "invalid.delay.duckyscript",
+					"begin": "(?<=DELAY\\s)",
+					"match": "([A-Z]|[a-z])*",
+					"end": "$"
+				},
+				{
+					"name": "invalid.keyword.duckyscript",
+					"match": "^([A-Z]|[a-z])\\s(([A-Z]|[a-z])\\s?)*?"
+				}
+			]
 		}
 	}
 }

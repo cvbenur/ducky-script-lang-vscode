@@ -70,6 +70,15 @@ https://github.com/cvbenur/ducky-scripts-and-payloads
 
 ## Releases
 
+### 1.0.4 - March 7th, 2020
+
+Added an icon to the extension. It can be found under `./img/icon.png`.
+
+Here it is :
+![Logo](https://github.com/cvbenur/ducky-script-lang-vscode/tree/master/img/icon.png "DSLangForVSC Logo")
+
+<br>
+
 ### 1.0.2 - March 6th, 2020
 
 Improved detection of single-line command/letter key combinations.

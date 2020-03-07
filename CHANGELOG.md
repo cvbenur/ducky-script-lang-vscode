@@ -4,6 +4,12 @@ All notable changes to the **Ducky Script Language for VSCode** extension will b
 
 <br>
 
+## 1.0.4 - March 7th, 2020
+
+Added an icon to the extension. It can be found under `./img/icon.png`.
+
+<br>
+
 ## 1.0.2 - March 6th, 2020
 
 Improved detection of single-line command/letter key combinations.
