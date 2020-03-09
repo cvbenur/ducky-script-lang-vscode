@@ -7,19 +7,19 @@
 			"include": "#keywords"
 		},
 		{
-			"include": "#comment"
+			"include": "#comments"
 		},
 		{
-			"include": "#variable"
+			"include": "#functions"
 		},
 		{
-			"include": "#string"
+			"include": "#variables"
 		},
 		{
-			"include": "#number"
+			"include": "#strings"
 		},
 		{
-			"include": "#errors"
+			"include": "#numbers"
 		}
 	],
 	"repository": {
@@ -29,20 +29,24 @@
 				"match": "^((GUI|WINDOWS|APP|MENU|SHIFT|ALT|CONTROL|CTRL|DOWNARROW|DOWN|UPARROW|UP|LEFTARROW|LEFT|RIGHTARROW|RIGHT|BREAK|PAUSE|CAPSLOCK|DELETE|END|ENTER|ESCAPE|ESC|HOME|INSERT|NUMLOCK|PAGEUP|PAGEDOWN|PRINTSCREEN|SCROLLLOCK|SPACE|TAB)\\s?)((([A-Z]|[a-z]|(GUI|WINDOWS|APP|MENU|SHIFT|ALT|CONTROL|CTRL|DOWNARROW|DOWN|UPARROW|UP|LEFTARROW|LEFT|RIGHTARROW|RIGHT|BREAK|PAUSE|CAPSLOCK|DELETE|END|ENTER|ESCAPE|ESC|HOME|INSERT|NUMLOCK|PAGEUP|PAGEDOWN|PRINTSCREEN|SCROLLLOCK|SPACE|TAB))\\s)*)?"
 				}]
 		},
-		"comment": {
+		"comments": {
 			"name": "comment.line.duckyscript",
 			"begin": "^REM\\s",
 			"end": "$"
 		},
-		"variable": {
+		"functions": {
+			"name": "entity.name.function",
+			"match": "^(DELAY|DEFAULT_DELAY|DEFAULTDELAY|REPEAT)\\s"
+		},
+		"variables": {
 			"patterns": [{
 				"name": "keyword.variable.duckyscript",
-				"match": "^(DELAY|DEFAULT_DELAY|DEFAULTDELAY|REPEAT|STRING)\\s"
+				"match": "^(STRING)\\s"
 			}]
 		},
-		"string": {
+		"strings": {
 			"name": "string.duckyscript",
-			"begin": "(?<=STRING\\s).*",
+			"begin": "(?<=^STRING\\s).*",
 			"end": "$",
 			"patterns": [
 				{
@@ -51,9 +55,9 @@
 				}
 			]
 		},
-		"number": {
+		"numbers": {
 			"name": "constant.numeric.duckyscript",
-			"match" : "[0-9]*(\\.[0-9]*)?"
+			"match" : "[0-9]*(\\.([0-9]*))?"
 		}
 	}
 }
